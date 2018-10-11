@@ -8,6 +8,10 @@
  *    4. Writes the new file to the file located at `writePath`
  */
 
+var util = require('util');
+var fs = require('fs');
+var pluckFirstLine = require('../bare_minimum/promiseConstructor.js').pluckFirstLineFromFileAsync;
+var writeFileAsync = util.promisify(fs.writeFile);
 
 var combineFirstLineOfManyFiles = function(filePaths, writePath) {
  // TODO

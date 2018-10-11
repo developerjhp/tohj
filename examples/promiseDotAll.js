@@ -1,6 +1,5 @@
-// Run this file with `node examples/collections.js`
+// Run this file with `node examples/promiseDotAll.js`
 
-var Promise = require('bluebird');
 var asyncLib = require('../lib/asyncLib.js');
 
 Promise.all([

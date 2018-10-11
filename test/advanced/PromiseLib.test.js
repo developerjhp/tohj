@@ -1,6 +1,5 @@
 var fs = require('fs');
 var expect = require('chai').expect;
-var Promise = require('bluebird');
 
 var delay = require('../../lib/asyncLib.js').delay;
 
@@ -43,7 +42,6 @@ describe('PromiseLib', function() {
       // delay comes from lib/asyncLib.js
       var arrayOfPromises = ['a', 'b', 'c'].map(delay);
 
-      // Must return a Bluebird promise. ES6 promise won't work here
       expect(PromiseLib.all(arrayOfPromises)).to.be.an.instanceOf(Promise);
     });
 
@@ -94,7 +92,7 @@ describe('PromiseLib', function() {
       // delay comes from lib/asyncLib.js
       var arrayOfPromises = ['a', 'b', 'c'].map(delay);
 
-      // Must return a Bluebird promise. ES6 promise won't work here
+
       expect(PromiseLib.race(arrayOfPromises)).to.be.an.instanceOf(Promise);
     });
 

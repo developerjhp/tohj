@@ -1,6 +1,5 @@
 var nock = require('nock');
 var expect = require('chai').expect;
-var Promise = require('bluebird');
 
 describe('Promise constructor', function() {
   var promiseConstructor = require('../../exercises/bare_minimum/promiseConstructor.js');
@@ -9,7 +8,7 @@ describe('Promise constructor', function() {
     var pluckFirstLineFromFileAsync = promiseConstructor.pluckFirstLineFromFileAsync;
 
     it('should return a promise', function() {
-      // Must return a Bluebird promise. ES6 promise won't work here
+
       expect(pluckFirstLineFromFileAsync(__dirname + '/../files/file_to_read.txt')).to.be.an.instanceOf(Promise);
     });
 
@@ -55,7 +54,6 @@ describe('Promise constructor', function() {
     it('should return a promise', function() {
       google.get('/').reply(200);
 
-      // Must return a Bluebird promise. ES6 promise won't work here
       expect(getStatusCodeAsync('https://google.com')).to.be.an.instanceOf(Promise);
     });
 

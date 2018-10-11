@@ -13,7 +13,6 @@
     "lint": "eslint ./"
   },
   "dependencies": {
-    "bluebird": "^3.3.4",
     "chai": "^3.2.0",
     "colors": "^1.1.2",
     "eslint-config-codestates": "^1.0.0",

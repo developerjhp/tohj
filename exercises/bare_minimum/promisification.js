@@ -1,12 +1,12 @@
 /**
  * Create the promise returning `Async` suffixed versions of the functions below,
  * Promisify them if you can, otherwise roll your own promise returning function
- */ 
+ */
 
 var fs = require('fs');
 var request = require('request');
 var crypto = require('crypto');
-var Promise = require('bluebird');
+var util = require('util');
 
 // (1) Asyncronous HTTP request
 var getGitHubProfile = function(user, callback) {
@@ -45,7 +45,7 @@ var generateRandomTokenAsync; // TODO
 var readFileAndMakeItFunny = function(filePath, callback) {
   fs.readFile(filePath, 'utf8', function(err, file) {
     if (err) { return callback(err); }
-   
+
     var funnyFile = file.split('\n')
       .map(function(line) {
         return line + ' lol';

@@ -1,6 +1,5 @@
 var nock = require('nock');
 var expect = require('chai').expect;
-var Promise = require('bluebird');
 
 describe('Promisification', function() {
   var promisificaion = require('../../exercises/bare_minimum/promisification.js');
@@ -18,7 +17,6 @@ describe('Promisification', function() {
     it('should return a promise', function() {
       githubAPI.get('/users/someRealUser').reply(200);
 
-      // Must return a Bluebird promise. ES6 promise won't work here
       expect(getGitHubProfileAsync('someRealUser')).to.be.an.instanceOf(Promise);
     });
 
@@ -61,7 +59,6 @@ describe('Promisification', function() {
     var generateRandomTokenAsync = promisificaion.generateRandomTokenAsync;
 
     it('should return a promise', function() {
-      // Must return a Bluebird promise. ES6 promise won't work here
       expect(generateRandomTokenAsync()).to.be.an.instanceOf(Promise);
     });
 
@@ -81,7 +78,6 @@ describe('Promisification', function() {
     var readFileAndMakeItFunnyAsync = promisificaion.readFileAndMakeItFunnyAsync;
 
     it('should return a promise', function() {
-      // Must return a Bluebird promise. ES6 promise won't work here
       expect(readFileAndMakeItFunnyAsync(__dirname + '/../files/file_to_read.txt')).to.be.an.instanceOf(Promise);
     });
 

@@ -1,6 +1,5 @@
 var fs = require('fs');
 var expect = require('chai').expect;
-var Promise = require('bluebird');
 
 // NOTE: These tests don't use mocks of any kind
 // If test speed or API rate limits become an issue,
@@ -27,7 +26,7 @@ describe('Collections', function() {
     });
 
     it('should return a promise', function() {
-      // Must return a Bluebird promise. ES6 promise won't work here
+
       expect(combine(filesToRead, fileToWriteTo)).to.be.an.instanceOf(Promise);
     });
 
