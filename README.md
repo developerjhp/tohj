@@ -2,44 +2,40 @@
 
 ## 이번 Sprint의 학습 목표
 
-- Node.js에 대해 이해하고 설명할 수 있다.
-- Package Manager가 무엇인지 알고, 사용 할 수 있다.
-- HTTP server를 켜기 위해 node.js 를 활용 할 수 있다.
-- CommonJS 패턴을 사용 할 줄 안다.
-- node modules (fs, http etc)등을 사용 할 줄 안다.
-- Front-end 개발자를 위한 API 문서를 작성 할 수 있다.
-- Client에서 Server와 통신 할 수 있다.
+- Node.js development callback patterns, 특히 asynchronous functions 활용에 친숙해진다.
+- 어떤 경우에 중첩된 callback이 발생하는지 이해한다.
+- 중첩된 callback의 단점을 이해한다.
+- Asynchronous code를 읽고 쓰기 편하도록 Promises를 사용해본다.
+- method chaining의 개념을 이해한다.
+- `async`/`await` keyword에 대해 이해하고, 작동 원리 및 장점 및 단점을 이해한다.
+- `async`/`await` 사용 시 `try`/`catch`를 통한 에러 처리를 이해한다.
 
 ## Sprint를 시작하기 전 알고있어야 하는 것들
 
 Sprint를 원활히 진행하기 위해 꼭 알고있어야하는 것들입니다.
-아래 항목들 중 모르는 것이 있다면 Sprint를 시작하기 전 꼭 help-desk에 문의부탁드립니다. 
+아래 항목들 중 모르는 것이 있다면 Sprint를 시작하기 전 꼭 help-desk에 문의부탁드립니다.
 
-- [ ] HTTP 요청과 응답에 관하여 알고있다.
-- [ ] fetch library를 이용하여 HTTP 요청을 보낼 수 있다.
 - [ ] 비동기 함수와 callback 함수에 대해서 알고있고, 잘 사용할 수 있다.
-- [ ] CORS에 대하여 이해 하고있고, 처리방법을 알고 있다.
+- [ ] fetch API를 사용할 수 있다.
+- [ ] `fs`를 통해 파일을 불러올 수 있다.
+- [ ] node module을 불러올 수 있다.
 
 ## Pair programming을 시작하기 전 혼자서 해볼 것들
 
 본격적으로 Pair programming을 시작하기 전 아래 항목들을 먼저 확인해봅니다.
 
-- [ ] package.json이 무엇인지 파악하고, script코드를 작성.
-- [ ] npm install, --save 옵션, global 설치에 대해서 알아보기.
-- [ ] API제작을 위해서 [draw tool](https://draw.io)를 사용하여 알고리즘 도식화 하기.
-- [ ] Node.js 의 [http](https://nodejs.org/api/http.html#http_http) module을 활용하여 request에 따른 response 주기.
+- [ ] [request](https://github.com/request/request) 라이브러리 사용 방법 확인
+- [ ] `fs.readFile` 메소드 사용 방법 확인
 
 ## Pair programming에서 같이 해볼 것들
 
-- [ ] front-end 개발자를 위한 API문서를 제작하기.
-- [ ] chatterbox-client코드를 server와 연결 시키기
+- [ ] `basicChaining` 에서 가능한 최소한의 코드로 작성하기
+- [ ] bare minimum requirement 가 끝난 후, `async`/`await`으로 리팩토링 하기
 
 ## Advanced 한 과제들
 
-- [ ] [fs](https://nodejs.org/api/fs.html#fs_file_system)module 활용해서 chat 내용 저장하고, 서버가 꺼져도 데이터 유지되게 하기.
-- [ ] Node module 활용해서 static파일 serve하기.
-- [ ] [Express](https://expressjs.com/)를 통해서 서버 코드 리팩토링 하기.
-- [ ] [Socket.io](https://socket.io/)를 활용하여 더 완성도 높은 채팅 앱 만들기.
+- [ ] Promise.all 사용해보기
+- [ ] Promise 직접 구현해보기
 
 ## Sprint 진행 방법
 
