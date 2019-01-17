@@ -9,7 +9,7 @@
   },
   "scripts": {
     "postinstall": "curl -s https://raw.githubusercontent.com/codestates/pomander/master/bin/install | bash",
-    "test": "mocha test/index.js --bail",
+    "test": "mocha test/index.js",
     "lint": "eslint ./"
   },
   "dependencies": {
