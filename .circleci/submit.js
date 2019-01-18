@@ -42,7 +42,7 @@ exec('npm test | grep -E \"[0-9]+\\s(passing|failing)\"', (err, stdout1, stderr)
             });
     
             req.on('error', (e) => {
-                console.log('error');
+                throw new Error('data did not send to airtable correctlu')
                 // callback(new Error('failure'));
             });
             // send the request
