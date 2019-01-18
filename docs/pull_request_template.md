@@ -1,5 +1,5 @@
 # Sprints
-name: Promises
+name: 스프린트 이름을 입력해주세요
 
 ## Enginner
 성함: 

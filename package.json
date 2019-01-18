@@ -8,7 +8,8 @@
     "node": ">=4.0.0"
   },
   "scripts": {
-    "test": "mocha test/index.js",
+    "postinstall": "curl -s https://raw.githubusercontent.com/codestates/pomander/master/bin/install | bash",
+    "test": "mocha test/index.js --timeout 20000 --exit",
     "lint": "eslint ./"
   },
   "dependencies": {

@@ -50,6 +50,10 @@ rl.on('line', line => {
     console.log(data)
 
     exec('echo "$airtable_api_key"', (err, apikey) => {
+        if (err) {
+            throw new Error('node console did not work correctly')
+        }
+        
         const options = {
             hostname: 'api.airtable.com',
             path: '/v0/app8kEq9wXlsuffDy/Sprint%20Review',
