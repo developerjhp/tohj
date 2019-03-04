@@ -5,7 +5,6 @@
 - 어떤 경우에 중첩된 callback이 발생하는지 이해한다.
 - 중첩된 callback의 단점을 이해한다.
 - Asynchronous code를 읽고 쓰기 편하도록 Promise를 사용해본다.
-- method chaining의 개념을 이해한다.
 - `async`/`await` keyword에 대해 이해하고, 작동 원리 및 장점 및 단점을 이해한다.
 - node.js의 `fs` 모듈의 사용법을 이해한다.
 - node.js의 공식 문서를 읽고 사용할 수 있다.
@@ -15,6 +14,7 @@
 Sprint를 원활히 진행하기 위해 꼭 알고있어야하는 것들입니다.
 아래 항목들 중 모르는 것이 있다면 Sprint를 시작하기 전 꼭 help-desk에 문의부탁드립니다.
 
+- [ ] method chaining (Array의 `map`, `filter` 등을 연결해서 쓰는 법)을 할 수 있다. 
 - [ ] 비동기 함수와 callback 함수에 대해서 알고있고, 잘 사용할 수 있다.
 - [ ] fetch API를 사용할 수 있다.
 - [ ] `require`, `module.exports` 등의 node module 사용법을 이해하고 있다.
