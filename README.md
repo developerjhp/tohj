@@ -2,13 +2,13 @@
 
 ## 이번 Sprint의 학습 목표
 
-- Node.js development callback patterns, 특히 asynchronous functions 활용에 친숙해진다.
 - 어떤 경우에 중첩된 callback이 발생하는지 이해한다.
 - 중첩된 callback의 단점을 이해한다.
-- Asynchronous code를 읽고 쓰기 편하도록 Promises를 사용해본다.
+- Asynchronous code를 읽고 쓰기 편하도록 Promise를 사용해본다.
 - method chaining의 개념을 이해한다.
 - `async`/`await` keyword에 대해 이해하고, 작동 원리 및 장점 및 단점을 이해한다.
-- `async`/`await` 사용 시 `try`/`catch`를 통한 에러 처리를 이해한다.
+- node.js의 `fs` 모듈의 사용법을 이해한다.
+- node.js의 공식 문서를 읽고 사용할 수 있다.
 
 ## Sprint를 시작하기 전 알고있어야 하는 것들
 
@@ -17,8 +17,7 @@ Sprint를 원활히 진행하기 위해 꼭 알고있어야하는 것들입니�
 
 - [ ] 비동기 함수와 callback 함수에 대해서 알고있고, 잘 사용할 수 있다.
 - [ ] fetch API를 사용할 수 있다.
-- [ ] `fs`를 통해 파일을 불러올 수 있다.
-- [ ] node module을 불러올 수 있다.
+- [ ] `require`, `module.exports` 등의 node module 사용법을 이해하고 있다.
 
 ## Pair programming을 시작하기 전 혼자서 해볼 것들
 
@@ -35,6 +34,7 @@ Sprint를 원활히 진행하기 위해 꼭 알고있어야하는 것들입니�
 ## Advanced 한 과제들
 
 - [ ] Promise.all 사용해보기
+- [ ] `async`/`await` 사용 시 `try`/`catch`를 통한 에러 처리를 이해한다.
 - [ ] Promise 직접 구현해보기
 
 ## Sprint 진행 방법
