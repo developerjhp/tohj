@@ -1,11 +1,14 @@
 # Promises
 ## Objectives
 이번 Sprint를 진행하며 수강생분이 이해하신 학습목표를 선택해주세요.([ ]안에 알파벳 소문자 x를 입력해주세요)
-- [ ] Node.js에 대해 이해하고 설명할 수 있다.
-- [ ] Package Manager가 무엇인지 알고, 사용 할 수 있다.
-- [ ] CommonJS 패턴을 사용 할 줄 안다.
-- [ ] Front-end 개발자를 위한 API 문서를 작성 할 수 있다.
-- [ ] Client에서 Server와 통신 할 수 있다.
+
+- [ ] 어떤 경우에 중첩된 callback이 발생하는지 이해한다.
+- [ ] 중첩된 callback의 단점을 이해한다.
+- [ ] Asynchronous code를 읽고 쓰기 편하도록 Promise를 사용해본다.
+- [ ] `async`/`await` keyword에 대해 이해하고, 작동 원리 및 장점 및 단점을 이해한다.
+- [ ] node.js의 `fs` 모듈의 사용법을 이해한다.
+- [ ] node.js의 공식 문서를 읽고 사용할 수 있다.
+
 ## Improvements
 이번 Sprint에서 더 개선이 필요하다고 느끼는 항목을 선택해주세요.([ ]안에 알파벳 소문자 x를 입력해주세요)
 - [ ] Sessions
