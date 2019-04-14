@@ -8,14 +8,14 @@
  * HINT: We exported some similar promise-returning functions in previous exercises
  */
 
-var fs = require('fs');
-var util = require('util');
+const fs = require('fs');
+const util = require('util');
 
-var pluckFirstLineFromFileAsync = require('./promiseConstructor').pluckFirstLineFromFileAsync;
-var getGitHubProfileAsync = require('./promisification').getGitHubProfileAsync;
-var writeFileAsync = util.promisify(fs.writeFile);
+const pluckFirstLineFromFileAsync = require('./promiseConstructor').pluckFirstLineFromFileAsync;
+const getGitHubProfileAsync = require('./promisification').getGitHubProfileAsync;
+const writeFileAsync = util.promisify(fs.writeFile);
 
-var fetchProfileAndWriteToFile = function(readFilePath, writeFilePath) {
+const fetchProfileAndWriteToFile = function(readFilePath, writeFilePath) {
   // TODO
 };
 

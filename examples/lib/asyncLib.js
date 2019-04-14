@@ -3,11 +3,10 @@
 
 // You could imagine that a real promise aware library would actually
 // be performing work during this time.
-
-var colors = require('colors');
+const colors = require('colors');
 
 // The core helper function in this module. A complete time waster
-var delay = function(time, value) {
+const delay = function(time, value) {
   return new Promise(function(resolve, reject) {
     if (time > 10000) {
       reject(new Error('Delay for value ' + value + ' is too long'));
@@ -19,7 +18,7 @@ var delay = function(time, value) {
   });
 };
 
-var logResolvedValues = function(resolvedFromPromiseDotAll) {
+const logResolvedValues = function(resolvedFromPromiseDotAll) {
   console.log([
     '',
     'Promise.all has fulfilled!'.magenta,
@@ -47,7 +46,7 @@ var logResolvedValues = function(resolvedFromPromiseDotAll) {
     });
 };
 
-var filterValuesFromCollection = function(collection) {
+const filterValuesFromCollection = function(collection) {
   // You can return non promises in a .then block too!
   console.log('Filtering values...');
   console.log('This is a syncronous option so it should be quick');
@@ -56,7 +55,7 @@ var filterValuesFromCollection = function(collection) {
   });
 };
 
-var doMoreAsyncWorkWithFilteredValues = function(collection) {
+const doMoreAsyncWorkWithFilteredValues = function(collection) {
   console.log([
     '',
     'Done filtering!'.magenta,
@@ -87,8 +86,8 @@ module.exports = {
 ['A', 'B', 'C', 'D'].forEach(function(value) {
   module.exports['getValue' + value] = function() {
     console.log('Getting ' + colors.yellow('value ' + value) + ' from ' + colors.green('getValue' + value + '()...'));
-    var timeToResolve = Math.random() * 4000 + 1000;
-    var obj = {
+    let timeToResolve = Math.random() * 4000 + 1000;
+    const obj = {
       value: value,
       timeToResolve: timeToResolve,
       shouldPassFilter: Math.random() > 0.5

@@ -1,6 +1,6 @@
 // Run this file with `node examples/promiseDotAll.js`
 
-var asyncLib = require('../lib/asyncLib.js');
+var asyncLib = require('./lib/asyncLib.js');
 
 Promise.all([
   asyncLib.getValueA(),
@@ -12,4 +12,5 @@ Promise.all([
 .then(asyncLib.filterValuesFromCollection)
 .then(asyncLib.doMoreAsyncWorkWithFilteredValues)
 // `bind` sets correct context when using console.log as a callback
+/* eslint-disable-next-line */
 .catch(console.log.bind(console));

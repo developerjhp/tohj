@@ -1,20 +1,23 @@
 // No real database here, just time wasters to simulate asyncrony
 
-var colors = require('colors');
+/* eslint-disable-next-line */
+const colors = require('colors');
 
-var findUserInDatabase = function(user, callback) {
+// The functions below are writtend in callback pattern
+const findUserInDatabase = function(user, callback) {
   console.log('Searching for user ' + user.name.yellow + ' from ' + 'findUserInDatabase'.green);
   setTimeout(function() {
 
     // Randomize the fate of our mock async function
-    var state = Math.random();
+    let state = Math.random();
 
-    if (state < 0.8) {
+    if (state < 0.5) {
       console.log('Found ' + '0'.yellow + ' record(s)');
-      callback(null, null);
-    } else if (state < 0.9) {
-      console.log('Found ' + '1'.yellow + ' record(s)');
+      // Call the callback function. Note the first parameter is an error
       callback(null, user);
+    } else if (state > 0.5) {
+      console.log('Found ' + '1'.yellow + ' record(s)');
+      callback(user, null);
     } else {
       console.log('Error searching for user!'.red);
       callback('Error searching for user', null);
@@ -23,11 +26,11 @@ var findUserInDatabase = function(user, callback) {
   }, Math.random() * 1000 + 1000);
 };
 
-var hashPassword = function(user, callback) {
+const hashPassword = function(user, callback) {
   console.log('Hashing ' + user.name.yellow + '\'s password ' + user.password.yellow + ' in ' + 'hashPassword'.green);
   setTimeout(function() {
 
-    var state = Math.random();
+    let state = Math.random();
 
     if (state < 0.8) {
       user.password = '10101010101'; // super secure
@@ -41,11 +44,11 @@ var hashPassword = function(user, callback) {
   }, Math.random() * 1000 + 1000);
 };
 
-var createAndSaveUser = function(user, callback) {
+const createAndSaveUser = function(user, callback) {
   console.log('Saving secured user ' + user.name.yellow + ' with hashed password ' + user.password.yellow + ' in ' + 'createAndSaveUser'.green);
   setTimeout(function() {
 
-    var state = Math.random();
+    let state = Math.random();
 
     if (state < 0.8) {
       console.log('Successfully created and saved user ' + user.name.yellow);

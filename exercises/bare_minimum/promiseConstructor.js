@@ -4,16 +4,16 @@
  * to the function invocation, while errors should be available in the `catch` block
  */
 
-var fs = require('fs');
-var request = require('request');
+const fs = require('fs');
+const request = require('request');
 
 // This function should retrieve the first line of the file at `filePath`
-var pluckFirstLineFromFileAsync = function(filePath) {
+const pluckFirstLineFromFileAsync = function(filePath) {
   // TODO
 };
 
 // This function should retrieve the status code of a GET request to `url`
-var getStatusCodeAsync = function(url) {
+const getStatusCodeAsync = function(url) {
   // TODO
 };
 

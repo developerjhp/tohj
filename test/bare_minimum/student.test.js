@@ -1,6 +1,7 @@
 const { expect } = require('chai');
 const studentsData = require('../../student.json');
 
+/* eslint-disable-next-line */
 console.log(studentsData)
   
 describe('student.json', function () {
