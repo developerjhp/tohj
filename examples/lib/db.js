@@ -11,11 +11,11 @@ const findUserInDatabase = function(user, callback) {
     // Randomize the fate of our mock async function
     let state = Math.random();
 
-    if (state < 0.5) {
+    if (state < 0.7) {
       console.log('Found ' + '0'.yellow + ' record(s)');
       // Call the callback function. Note the first parameter is an error
       callback(null, user);
-    } else if (state > 0.5) {
+    } else if (state > 0.8) {
       console.log('Found ' + '1'.yellow + ' record(s)');
       callback(user, null);
     } else {
