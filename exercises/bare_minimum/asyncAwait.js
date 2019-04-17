@@ -9,14 +9,14 @@
  * HINT: 새로 구현하지 마세요. 이전에 연습문제에서 export한 함수가 Promise를 리턴했던 것을 기억하세요!
  */
 
-var fs = require('fs');
-var util = require('util');
+const fs = require('fs');
+const util = require('util');
 
-var pluckFirstLineFromFileAsync = require('./promiseConstructor').pluckFirstLineFromFileAsync;
-var getGitHubProfileAsync = require('./promisification').getGitHubProfileAsync;
-var writeFileAsync = util.promisify(fs.writeFile);
+const pluckFirstLineFromFileAsync = require('./promiseConstructor').pluckFirstLineFromFileAsync;
+const getGitHubProfileAsync = require('./promisification').getGitHubProfileAsync;
+const writeFileAsync = util.promisify(fs.writeFile);
 
-var fetchProfileAndWriteToFileAsync = function(readFilePath, writeFilePath) {
+const fetchProfileAndWriteToFileAsync = function(readFilePath, writeFilePath) {
   // TODO
 
 };
