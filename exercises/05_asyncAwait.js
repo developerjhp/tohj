@@ -16,7 +16,7 @@ const util = require("util");
 const {
   getBodyFromGetRequestPromise,
   getDataFromFilePromise
-} = require("../exercises/promiseConstructor");
+} = require("../exercises/05_asyncAwait");
 
 const writeFilePromise = util.promisify(fs.writeFile);
 

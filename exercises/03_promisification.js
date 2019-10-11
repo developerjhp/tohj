@@ -3,7 +3,7 @@ const util = require("util");
 const {
   getDataFromFile,
   getBodyFromGetRequest
-} = require("../exercises/callBack");
+} = require("../exercises/01_callBack");
 
 const getDataFromFilePromise
 
