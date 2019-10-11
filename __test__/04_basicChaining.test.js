@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const { fetchUsersAndWriteToFile } = require("../exercises/basicChaining");
+const { fetchUsersAndWriteToFile } = require("../exercises/04_basicChaining");
 
 describe("Basic chaining Test", () => {
   describe("fetchUsersAndWriteToFile", () => {

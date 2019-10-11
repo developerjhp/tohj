@@ -1,7 +1,7 @@
 const {
   getDataFromFile,
   getBodyFromGetRequest
-} = require("../exercises/callBack");
+} = require("../exercises/01_callBack");
 
 describe("Callback Test", () => {
   describe("getDataFromFile", () => {

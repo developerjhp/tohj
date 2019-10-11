@@ -1,7 +1,7 @@
 const {
   getBodyFromGetRequestPromise,
   getDataFromFilePromise
-} = require("../exercises/promiseConstructor");
+} = require("../exercises/02_promiseConstructor");
 
 describe("Promisification Test", () => {
   describe("getBodyFromGetRequestPromise", () => {

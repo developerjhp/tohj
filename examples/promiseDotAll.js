@@ -1,4 +1,4 @@
-// Run this file with `node examples/promiseDotAll.js`
+// ./lib/asyncLib.js의 함수를 사용합니다.
 const asyncLib = require('./lib/asyncLib.js');
 
 const promises = [
@@ -14,5 +14,6 @@ Promise.all(promises)
 .then(asyncLib.logResolvedValues)
 .then(asyncLib.filterValuesFromCollection)
 .then(asyncLib.doMoreAsyncWorkWithFilteredValues)
-// `bind` sets correct context when using console.log as a callback
+// console.log.bind(console)란 무엇인가?
+// https://stackoverflow.com/questions/28668759/what-does-this-statement-do-console-log-bindconsole
 .catch(console.log.bind(console));

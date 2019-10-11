@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const { fetchUsersAndWriteToFileAsync } = require("../exercises/asyncAwait");
+const { fetchUsersAndWriteToFileAsync } = require("../exercises/05_asyncAwait");
 
 describe("Async & Await Test", () => {
   describe("fetchUsersAndWriteToFileAsync", () => {

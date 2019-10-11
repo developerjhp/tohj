@@ -1,15 +1,14 @@
+// 결혼을 요청하여 답변을 받는 로직입니다.
+// 각 기다리는 시간은 답변을 듣기위해 생각하는 시간입니다.
+// 총 4번의 콜백을 호출하여 랜덤한 수를 뽑아 값이 짝수면 결혼, 아니면 거절에 대한 반응이 출력됩니다.
+
 const marryMe = callback => {
   console.log("[You] Will you marry Me? 🤗");
 
   setTimeout(() => {
     callback("[Partner] Oh 😳, give me about five seconds?");
-    // Actually, your partner doesn't know what to do, but
-    // the partner is a javascript developer so,
-    // he/she decides that if he/she get odd number
-    // using Math.random(), the partner accepts your propose.
     setTimeout(() => {
       callback("[You] Yes, take your time. 😊");
-
       setTimeout(() => {
         let randomNum = Math.floor(Math.random() * Math.floor(10));
         let isOdd = randomNum % 2;
