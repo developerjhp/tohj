@@ -41,7 +41,8 @@ Sprint를 원활히 진행하기 위해 꼭 알고있어야하는 것들입니�
 
 1. 현재 repo를 자신의 Github으로 fork 합니다.
 2. fork된 repo를 git clone 명령어로 자신의 local 환경으로 다운로드합니다.
-3. 재밌게 coding을 시작합니다.
+3. examples 폴더의 예제를 실행하려면 `cd examples` && `node {filename}.js`로 확인할 수 있습니다.
+4. examples 폴더의 파일을 확인하여 Promise의 개념에 대해 접해보고 exercises coding을 시작합니다.
 
 ## 제출 방법
 
