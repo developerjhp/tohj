@@ -28,7 +28,7 @@ describe("Promisification Test", () => {
     });
   });
 
-  describe("readFileAndMakeItFunnyAsync", () => {
+  describe("getDataFromFilePromise", () => {
     const filePath = "files/read/userId.txt";
 
     it("should return a promise", () => {
