@@ -14,19 +14,19 @@
 Sprint를 원활히 진행하기 위해 꼭 알고있어야하는 것들입니다.
 아래 항목들 중 모르는 것이 있다면 Sprint를 시작하기 전 꼭 help-desk에 문의부탁드립니다.
 
-- [ ] method chaining (Array의 `map`, `filter` 등을 연결해서 쓰는 법)을 할 수 있다. 
+- [ ] method chaining (Array의 `map`, `filter` 등을 연결해서 쓰는 법)을 할 수 있다.
 - [ ] 비동기 함수와 callback 함수에 대해서 알고있고, 잘 사용할 수 있다.
 - [ ] fetch API를 사용할 수 있다.
 - [ ] `require`, `module.exports` 등의 node module 사용법을 이해하고 있다.
 
-## Pair programming을 시작하기 전 혼자서 해볼 것들
+## Sprint를 시작하기 전 해볼 것들
 
-본격적으로 Pair programming을 시작하기 전 아래 항목들을 먼저 확인해봅니다.
+본격적으로 Sprint를 시작하기 전 아래 항목들을 먼저 확인해봅니다.
 
 - [ ] [request](https://github.com/request/request) 라이브러리 사용 방법 확인
 - [ ] `fs.readFile` 메소드 사용 방법 확인
 
-## Pair programming에서 같이 해볼 것들
+## Sprint에서 해볼 것들
 
 - [ ] `basicChaining` 에서 가능한 최소한의 코드로 작성하기
 - [ ] bare minimum requirement 가 끝난 후, `async`/`await`으로 리팩토링 하기
