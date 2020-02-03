@@ -49,4 +49,4 @@ Sprint를 원활히 진행하기 위해 꼭 알고있어야하는 것들입니�
 1. [student.json](student.json) 파일에 필요한 정보를 입력합니다.
 2. 자신의 remote repo로 push 합니다.
 3. `npm run test` 를 통해 테스트 결과를 업데이트 합니다.
-4. `npm run submit' 을 통해 테스트 결과를 제출 합니다.
+4. `npm run submit` 을 통해 테스트 결과를 제출 합니다.
