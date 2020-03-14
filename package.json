@@ -14,9 +14,7 @@
   },
   "scripts": {
     "test": "jest --json --outputFile=results.json",
-    "pre-test" : "node __test__/preTest.js",
-    "check": "node .airci/submit.js",
-    "submit": "npm-run-all -s --silent pre-test check"
+    "pre-test": "node __test__/preTest.js"
   },
   "author": "",
   "license": "ISC"
