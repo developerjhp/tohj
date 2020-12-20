@@ -9,7 +9,8 @@
   "scripts": {
     "test:part-2": "jest --runInBand part-2/__test__/**.test.js",
     "server:part-3": "node part-3/__test__/app.js",
-    "submit": "node .travis/submit.js"
+    "report": "jest --runInBand part-2/__test__/**.test.js --json --outputFile=report.jest.json",
+    "submit": "npx codestates-submission"
   },
   "jest": {
     "testSequencer": "./testSequencer.js",
@@ -18,6 +19,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@codestates-cc/submission-npm": "^1.1.2",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "sinon": "^9.0.3",
