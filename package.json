@@ -1,5 +1,5 @@
 {
-  "name": "sprint-promise",
+  "name": "async-and-promise",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@codestates-cc/submission-npm": "^1.1.2",
+    "@codestates-cc/submission-npm": "^1.1.3",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "sinon": "^9.0.3",
