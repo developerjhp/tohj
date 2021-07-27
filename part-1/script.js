@@ -30,14 +30,23 @@ function runPromise() {
   resetTitle();
   playVideo();
 
-  sleep(1000).then(() => {
-    pauseVideo();
-    displayTitle();
-  })
-    .then(sleep.bind(null, 500))
+  sleep(1000)
+    .then((param) => {
+      console.log(param,'1');
+      pauseVideo();
+      displayTitle();
+      return "world";
+    })
+    .then((param) => {
+      console.log(param);
+      sleep(500);
+    })
     .then(highlightTitle)
     .then(sleep.bind(null, 2000))
     .then(resetTitle)
+    .catch(err => {
+      console.log
+    })
 }
 
 async function runAsync() {
